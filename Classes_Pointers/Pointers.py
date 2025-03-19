@@ -39,7 +39,7 @@ print("dict2 points to:", id(dict2))
 
 dict2['value']=22
 
-print("\n\After value is updated:")
+print("\nAfter value is updated:")
 print("dict1 =", dict1)
 print("dict2 =", dict2)
 
