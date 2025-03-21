@@ -1,6 +1,6 @@
 class Node:
     def __init__(self,value):
-        self.values=value
+        self.value=value
         self.next=None
         
 class LinkedList:
@@ -11,4 +11,4 @@ class LinkedList:
         self.length=1 
 my_linked_list=LinkedList(4)
 
-print(my_linked_list.head.values)
+print(my_linked_list.head.value)
