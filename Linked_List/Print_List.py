@@ -1,36 +1,28 @@
 class Node:
-    def __init__(self, value):
-        self.value = value
-        self.next = None  # Fix here
+    def __init__(self,value):
+        self.value=value
+        self.next=None
 
 class LinkedList:
-    def __init__(self, value):
-        new_node = Node(value)
-        self.head = new_node
-        self.tail = new_node
-        self.length = 1
-
+    def __init__(self,value):
+        new_node=Node(value)
+        self.head=new_node
+        self.tail=new_node
+        self.length=1
+        
     def print_list(self):
-        temp = self.head
+        temp=self.head
         while temp is not None:
             print(temp.value)
-            temp = temp.next
+            temp=temp.next
 
-    def append(self, value):
-        new_node = Node(value)
-        if self.length == 0:
-            self.head = new_node
-            self.tail = new_node
-        else:
-            self.tail.next = new_node  # No error now
-            self.tail = new_node
-        self.length += 1
-        return True
+linked_list=LinkedList(4)
 
 
-my_linked_list = LinkedList(11)
-my_linked_list.append(3)
-my_linked_list.append(23)
-my_linked_list.append(7)
 
-my_linked_list.print_list()
+        
+        
+print('Head:', linked_list.head.value)
+print('Tail:', linked_list.tail.value)
+print('Length:', linked_list.length)
+print('Print List:', linked_list.print_list())
