@@ -1,5 +1,5 @@
 #  O(2n)
-
+# we simplify our big(O) by dropping constant.
 def print_items(n):
     for i in range(n):
         print(i)
