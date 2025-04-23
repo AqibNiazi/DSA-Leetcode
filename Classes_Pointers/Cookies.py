@@ -20,8 +20,6 @@ cookie_one.setColor('yellow')
 print('\nCookie one is now', cookie_one.getColor())
 print('Cookie two is still', cookie_two.getColor())
 
-print("cookie one is ",cookie_one.getColor())
+cookie_one.setColor("red")
 
-cookie_one.setColor("Yellow")
-
-print("cookie one is now",cookie_one.getColor())
+print("\ncookie one is now",cookie_one.getColor())
