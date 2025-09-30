@@ -17,6 +17,7 @@ class LinkedList:
             temp=temp.next
 
 linked_list=LinkedList(4)
+linked_list=LinkedList(11)
 
 
 

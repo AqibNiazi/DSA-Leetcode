@@ -17,3 +17,5 @@ linked_list=LinkedList(5)
 
 print(linked_list.head.value) # 5
 print(linked_list.tail.value) # 5   
+
+
