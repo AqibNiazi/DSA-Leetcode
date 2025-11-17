@@ -11,28 +11,8 @@ class Linked_List:
         self.tail=new_node
         self.length=1
         
-    def append(self,value):
-            new_node=Node(value)
-            if self.length==0:
-               self.head=new_node
-               self.tail=new_node
-            else:
-                self.tail.next=new_node
-                self.tail=new_node
-            self.length+=1
-            
-    def print_list(self):
-        temp=self.head
-        while temp is not None:
-            print(temp.value)
-            temp=temp.next
-       
+my_linked_list = Linked_List(4)
 
-linked_list=Linked_List(10)
-linked_list.append(20)
-linked_list.append(30)
-
-linked_list.print_list()   
-
-print("Head :", linked_list.head.value)    
-print("Tail :", linked_list.tail.value)    
+print('Head:', my_linked_list.head.value)
+print('Tail:', my_linked_list.tail.value)
+print('Length:', my_linked_list.length)
