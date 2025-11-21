@@ -109,17 +109,31 @@ class Linked_List:
         temp.next=None
         self.length-=1
         return temp
+    
+    def reverse(self):
+        temp=self.head
+        self.head=self.tail
+        self.tail=temp
+        after=temp.next
+        before=None
+        for _ in range(self.length):
+            after=temp.next
+            temp.next=before
+            before=temp
+            temp=after
+    
             
         
-linked_list=Linked_List(10)
-linked_list.append(20)
-linked_list.append(30)
+linked_list=Linked_List(1)
+linked_list.append(2)
+linked_list.append(3)
 
-print("Linked List before Remove")
+print("Linked List before Reverse")
+linked_list.print_list()
+
+linked_list.reverse()
+print("Linked List After Reverse")
 linked_list.print_list()
 
 
-print("Linked List After Remove")
-linked_list.remove(2)
-linked_list.print_list()
 
